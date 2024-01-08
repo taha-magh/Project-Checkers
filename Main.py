@@ -21,6 +21,7 @@ class Checkers:
 		game = Game()
 		while self.running:
 			game.check_jump(board)
+			
 
 			for self.event in pygame.event.get():
 				if self.event.type == pygame.QUIT:
