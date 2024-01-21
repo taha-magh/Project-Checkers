@@ -41,7 +41,9 @@ class Checkers:
 if __name__ == "__main__":
 	window_size = (640, 640)
 	screen = pygame.display.set_mode(window_size)
-	pygame.display.set_caption("Checkers")
-
+	pygame.display.set_caption("DAMMA")
+#change favIcon
+	programIcon = pygame.image.load('./images/iconHetic.jpeg')
+	pygame.display.set_icon(programIcon)	
 	checkers = Checkers(screen)
 	checkers.main(window_size[0], window_size[1])
